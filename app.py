@@ -73,14 +73,14 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 # Create templates directory and files
-templates_dir = 'templates'
-if not os.path.exists(templates_dir):
-    os.makedirs(templates_dir)
+# templates_dir = 'templates'
+# if not os.path.exists(templates_dir):
+#     os.makedirs(templates_dir)
 
 
 # Save the HTML template
-with open(os.path.join(templates_dir, 'index.html'), 'w', encoding='utf-8') as f:
-    f.write(html_template)
+# with open(os.path.join(templates_dir, 'index.html'), 'w', encoding='utf-8') as f:
+#     f.write(html_template)
 
 print("Flask application created successfully!")
 print("\nTo run the application:")
