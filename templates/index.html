@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Free ChatGPT Prompts Collection | By Hezron.dev</title>
+    <meta name="description" content="Discover the best free ChatGPT prompts for every use case. Browse, search, and copy top AI prompts for productivity, creativity, learning, and more.">
+    <meta name="keywords" content="ChatGPT prompts, best ChatGPT prompts, free ChatGPT prompts, AI prompts, prompt engineering, productivity, creativity, Hezron.dev">
+    <link rel="canonical" href="https://hezrondev.vercel.app/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Best Free ChatGPT Prompts Collection | By Hezron.dev">
+    <meta property="og:description" content="Discover the best free ChatGPT prompts for every use case. Browse, search, and copy top AI prompts for productivity, creativity, learning, and more.">
+    <meta property="og:url" content="https://hezrondev.vercel.app/">
+    <meta property="og:site_name" content="Hezron.dev">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Free ChatGPT Prompts Collection | Hezron.dev">
+    <meta name="twitter:description" content="Discover the best free ChatGPT prompts for every use case. Browse, search, and copy top AI prompts for productivity, creativity, learning, and more.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,100 1000,0"/></svg>');
+            background-size: cover;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .prompt-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s cubic-bezier(.4,2,.6,1);
+            border: none;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .prompt-card:hover, .prompt-card:focus-within {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: var(--card-hover-shadow);
+        }
+        .prompt-card .card-header {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: 1.25rem 1.25rem 1rem 1.25rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .prompt-card .card-body {
+            padding: 1.25rem;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .prompt-text {
+            color: #2d3748;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s;
+        }
+        .prompt-text.expanded {
+            -webkit-line-clamp: unset;
+            overflow: visible;
+        }
+        .copy-btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 0.5rem 1.25rem;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 1rem;
+            outline: none;
+        }
+        .copy-btn:focus, .copy-btn:active {
+            box-shadow: 0 0 0 2px #667eea55;
+        }
+        .copy-btn:hover {
+            transform: scale(1.07);
+            color: white;
+        }
+        .expand-btn {
+            min-width: 110px;
+            font-size: 0.98rem;
+            border-radius: 20px;
+            outline: none;
+        }
+        .expand-btn:focus {
+            box-shadow: 0 0 0 2px #764ba255;
+        }
+        .search-container {
+            background: white;
+            border-radius: 50px;
+            box-shadow: var(--card-shadow);
+            padding: 0.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .search-input {
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+        }
+        .search-input:focus {
+            box-shadow: 0 0 0 2px #667eea55;
+            outline: none;
+        }
+        .search-btn {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        .search-btn:focus {
+            box-shadow: 0 0 0 2px #764ba255;
+        }
+        .search-btn:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+        .pagination {
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+        .page-link {
+            color: #667eea;
+            border: 2px solid #e2e8f0;
+            margin: 0 0.25rem;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+            font-size: 1.05rem;
+        }
+        .page-link:focus {
+            box-shadow: 0 0 0 2px #667eea55;
+        }
+        .page-link:hover {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+        .page-item.active .page-link {
+            background: var(--primary-gradient);
+            border-color: transparent;
+            color: #fff;
+        }
+        .stats-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .loading-spinner {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        /* Responsive improvements */
+        @media (max-width: 1200px) {
+            .prompt-card .card-header {
+                font-size: 1rem;
+                padding: 1rem 1rem 0.75rem 1rem;
+            }
+            .prompt-card .card-body {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 992px) {
+            .prompt-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 0;
+            }
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .prompt-card .card-header {
+                font-size: 0.98rem;
+                padding: 0.85rem 0.85rem 0.5rem 0.85rem;
+            }
+            .prompt-card .card-body {
+                padding: 0.85rem;
+            }
+            .prompt-text {
+                font-size: 0.98rem;
+            }
+            .search-input, .search-btn {
+                font-size: 1rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .prompt-card {
+                border-radius: 10px;
+            }
+            .prompt-card .card-header {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .search-container {
+                padding: 0.25rem;
+            }
+            .stats-card {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .prompt-card .card-header {
+                font-size: 0.92rem;
+            }
+            .prompt-text {
+                font-size: 0.92rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fas fa-robot me-3" aria-hidden="true"></i>
+                    <span>Best Free ChatGPT Prompts Collection</span>
+                </h1>
+                <p class="lead mb-4">Discover the best free ChatGPT prompts to enhance your AI conversations, boost productivity, and spark creativity.</p>
+                <div class="stats-card d-inline-block">
+                    <div class="stats-number">{{ total_prompts }}</div>
+                    <div class="text-muted">Total Prompts</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Search Section -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form method="GET" class="search-container" role="search" aria-label="Prompt search">
+                    <div class="input-group">
+                        <input type="text" 
+                               class="form-control search-input" 
+                               name="search" 
+                               placeholder="Search prompts by role or description..."
+                               value="{{ search_query }}"
+                               id="searchInput"
+                               aria-label="Search prompts">
+                        <button class="btn search-btn" type="submit" aria-label="Search">
+                            <i class="fas fa-search me-2" aria-hidden="true"></i>Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Results Info -->
+        {% if search_query %}
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="alert alert-info" role="status">
+                    <i class="fas fa-info-circle me-2" aria-hidden="true"></i>
+                    Found {{ total_prompts }} prompts matching "{{ search_query }}"
+                    <a href="/" class="btn btn-sm btn-outline-primary ms-2">Clear Search</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner" aria-live="polite">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <!-- Prompts Grid -->
+        <div class="row" id="promptsContainer">
+            {% for prompt in prompts %}
+            <div class="col-12 col-md-6 col-xl-4 mb-4 d-flex align-items-stretch fade-in">
+                <div class="prompt-card card h-100 w-100" tabindex="0" aria-label="Prompt card for {{ prompt.act }}">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>{{ prompt.act }}</span>
+                        <button class="btn btn-sm copy-btn" onclick="copyPrompt('{{ loop.index0 }}')" aria-label="Copy prompt for {{ prompt.act }}">
+                            <i class="fas fa-copy me-1" aria-hidden="true"></i>Copy
+                        </button>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="prompt-text" id="prompt-{{ loop.index0 }}">{{ prompt.prompt }}</p>
+                        <button class="btn btn-outline-primary btn-sm mt-2 expand-btn" onclick="toggleExpand('{{ loop.index0 }}')" aria-expanded="false" aria-controls="prompt-{{ loop.index0 }}">
+                            <span id="toggle-text-{{ loop.index0 }}">Show More</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- No Results -->
+        {% if prompts|length == 0 %}
+        <div class="row">
+            <div class="col-12 text-center py-5">
+                <i class="fas fa-search fa-3x text-muted mb-3" aria-hidden="true"></i>
+                <h4 class="text-muted">No prompts found</h4>
+                <p class="text-muted">Try adjusting your search terms</p>
+            </div>
+        </div>
+        {% endif %}
+        <!-- Pagination -->
+        {% if total_pages > 1 %}
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if has_prev %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ current_page - 1 }}{% if search_query %}&search={{ search_query }}{% endif %}" aria-label="Previous page">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                </li>
+                {% endif %}
+                {% for page_num in range(1, total_pages + 1) %}
+                {% if page_num == current_page %}
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">{{ page_num }}</span>
+                </li>
+                {% elif page_num <= 3 or page_num > total_pages - 3 or (page_num >= current_page - 1 and page_num <= current_page + 1) %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_num }}{% if search_query %}&search={{ search_query }}{% endif %}">{{ page_num }}</a>
+                </li>
+                {% elif page_num == 4 or page_num == total_pages - 3 %}
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% if has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ current_page + 1 }}{% if search_query %}&search={{ search_query }}{% endif %}" aria-label="Next page">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">
+                <i class="fas fa-heart text-danger me-2" aria-hidden="true"></i>
+                Made with love for the AI community by <a href="https://hezrondev.vercel.app" class="text-white" rel="author">Hezron.dev</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Copy prompt functionality
+        function copyPrompt(index) {
+            const promptText = document.getElementById(`prompt-${index}`).textContent;
+            navigator.clipboard.writeText(promptText).then(() => {
+                // Show success feedback
+                const btn = event.target.closest('.copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check me-1"></i>Copied!';
+                btn.style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+                btn.setAttribute('aria-label', 'Prompt copied!');
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';
+                    btn.setAttribute('aria-label', btn.getAttribute('data-original-label') || 'Copy prompt');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+        // Toggle expand/collapse functionality
+        function toggleExpand(index) {
+            const promptElement = document.getElementById(`prompt-${index}`);
+            const toggleButton = document.getElementById(`toggle-text-${index}`);
+            const expandBtn = toggleButton.parentElement;
+            if (promptElement.classList.contains('expanded')) {
+                promptElement.classList.remove('expanded');
+                expandBtn.setAttribute('aria-expanded', 'false');
+                toggleButton.textContent = 'Show More';
+            } else {
+                promptElement.classList.add('expanded');
+                expandBtn.setAttribute('aria-expanded', 'true');
+                toggleButton.textContent = 'Show Less';
+            }
+        }
+        // Live search functionality
+        let searchTimeout;
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                if (this.value.length > 2 || this.value.length === 0) {
+                    document.getElementById('loadingSpinner').style.display = 'flex';
+                    document.getElementById('promptsContainer').style.opacity = '0.5';
+                    // Simulate API call delay
+                    setTimeout(() => {
+                        document.getElementById('loadingSpinner').style.display = 'none';
+                        document.getElementById('promptsContainer').style.opacity = '1';
+                    }, 500);
+                }
+            }, 300);
+        });
+        // Smooth scroll for pagination
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (!this.closest('.page-item').classList.contains('active')) {
+                    document.getElementById('loadingSpinner').style.display = 'flex';
+                }
+            });
+        });
+        // Add fade-in animation to cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = `${Math.random() * 0.3}s`;
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.prompt-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
